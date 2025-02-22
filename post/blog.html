@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
+    <title>Blog feed page</title>
     <link href="/css/style.css" rel="stylesheet" />
-    <link href="/css/account.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -40,15 +39,23 @@
           <li>
             <a href="/index.html">Home</a>
           </li>
-          <li>
-            <a href="/post/blog.html">Blog</a>
+          <li class="dropdown">
+            <a href="/post/blog.html" class="dropbtn">Blog</a>
+            <!--
+            <ul class="dropdown-content">
+              <li><a href="/post/blog.html?id=blog-1">Tech</a></li>
+              <li><a href="/post/blog.html?id=blog-2">Lifestyle</a></li>
+              <li><a href="/post/blog.html?id=blog-3">Travel</a></li>
+            </ul>
+          </li>
+        -->
           </li>
 
           <li>
-            <a href="/html-info/about.html">About</a>
+            <a href="/html/about.html">About</a>
           </li>
           <li>
-            <a href="/html-info/contact.html">Contact</a>
+            <a href="/html/contact.html">Contact</a>
           </li>
           <li>
             <a href="/account/login.html"
@@ -59,27 +66,41 @@
       </nav>
     </header>
     <main>
-      <!--<button onclick="createBlogPost()">Create Blog Post</button>-->
-      <div class="form-container">
-        <h2>Login</h2>
-        <form id="loginForm">
-          <label for="email">Email</label>
-          <input type="email" id="email" required />
-
-          <label for="password">Password</label>
-          <input type="password" id="password" required />
-
-          <button type="submit">Register</button>
-          <p><a href="/account/forget-password.html">Forgot Password?</a></p>
-          <p>
-            Don't have an account? <a href="/account/register.html">Register</a>
-          </p>
-        </form>
-        <p id="loginMessage"></p>
+        <nav class="breadcrumb">
+          <a href="../index.html">Home > </a>  <a href="blog.html">Blog > </a>  <span class="current"></span></span>
+      </nav>
+  
+  
+        <!-- Back Button -->
+        <a href="/index.html" class="back-btn">← Back to Blog</a>
+        
+        <h1 id="postTitle">Loading...</h1>
+        <p id="postId"></p> <!-- ✅ New: Show Post ID -->
+        <img id="postImage" src="" alt="Blog Image">
+        <p id="postBody">Loading content...</p>
+      
+      
+      <aside id="related-posts">
+          <h2>Related Posts</h2>
+          <ul id="related-list"></ul>
+      </aside>
+      </main>
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="/html/contact.html">Contact</a>
+        <a href="">Terms & Conditions</a>
+        <a href="/html/about.html">About</a>
       </div>
-    </main>
-    <footer></footer>
-    <script src="/scr/script.js"></script>
-    <script src="/scr/script.js"></script>
+
+      <div class="social-icons">
+        <h4>Follow Us</h4>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </footer>
+
+    <script src="/js/index.js"></script>
   </body>
 </html>

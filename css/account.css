@@ -1,0 +1,32 @@
+.form-container {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  background: #f1f1f1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: start;
+}
+.form-container h2 {
+  text-align: center;
+  margin: 20px;
+}
+
+#loginForm a {
+  color: #6f4d89;
+  font-size: 12px;
+}
+#loginForm p {
+  font-size: 12px;
+}
+input,
+button {
+  width: 80%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+button {
+  background: #6f4d89;
+  color: white;
+  border: none;
+}

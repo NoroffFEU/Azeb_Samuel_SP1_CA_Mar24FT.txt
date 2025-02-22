@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login User</title>
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/css/account.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rubik+Glitch&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/101ebcce56.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <u>
+          <li>
+            <a href="/index.html">Home</a>
+          </li>
+          <li>
+            <a href="/post/blog.html" class="dropbtn">Blog</a>
+          </li>
+
+          <li>
+            <a href="/html-info/about.html">About</a>
+          </li>
+          <li>
+            <a href="/html-info/contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="/account/login.html"
+              ><i class="fa-regular fa-user"></i>login</a
+            >
+          </li>
+        </u>
+      </nav>
+    </header>
+    <main>
+      <div class="form-container">
+        <h2>Register</h2>
+        <form id="registerForm">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" required />
+
+          <label for="password">Password</label>
+          <input type="password" id="password" required />
+
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" id="confirmPassword" required />
+
+          <button type="submit">Register</button>
+          <p>
+            Already have an account? <a href="/account/login.html">Login</a>
+          </p>
+        </form>
+        <p id="registerMessage"></p>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="/scr/index.js"></script>
+    <script src="/scr/post.js"></script>
+    <script src="/scr/api.js"></script>
+
+    <script src="/scr/"></script>
+  </body>
+</html>
