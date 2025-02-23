@@ -2,92 +2,169 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hoem| BlogFeed</title>
-    <link href="/css/style.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-      rel="stylesheet"
+    <meta
+      name="description"
+      content="our present is our future with blog-tech explore more. "
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rubik+Glitch&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main/index.css" />
+    <link rel="stylesheet" href="css/main/blog.css" />
+    <link rel="stylesheet" href="css/media.css" />
     <script
-      src="https://kit.fontawesome.com/101ebcce56.js"
+      src="https://kit.fontawesome.com/b3766b9c07.js"
       crossorigin="anonymous"
     ></script>
+
+    <title>Blog-Tech | Home</title>
   </head>
   <body>
     <header>
-      <nav class="nav">
-        <u>
-          <li>
-            <a href="/index.html">Home</a>
-          </li>
-          <li class="dropdown">
-            <a href="/post/blog.html" class="dropbtn">Blog</a>
-          </li>
-          <li>
-            <a href="/html-info/about.html">About</a>
-          </li>
-          <li>
-            <a href="/html-info/contact.html">Contact</a>
-          </li>
-          <li>
-            <a href="/account/login.html"
-              ><i class="fa-regular fa-user"></i>login</a
-            >
-          </li>
-        </u>
+      <nav>
+        <a class="logo" href="index.html"
+          ><img src="images/logo1.PNG" alt="Logo"
+        /></a>
+
+        <div class="navbar">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="blog.html" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="./post/index.html" class="nav-link">Create post</a>
+            </li>
+            <li class="nav-item">
+              <a href="./account/register.html" class="nav-link">Register</a>
+            </li>
+            <li class="nav-item">
+              <a href="./account/login.html" class="nav-link">Login</a>
+            </li>
+            <li class="nav-item">
+              <button id="logoutButton" class="btn btn-logout">Logout</button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
     </header>
     <main>
-      <!-- Slider Section -->
-      <div id="carouselContainer"></div>
-        <div id="blogContainer"></div>
+      <section class="banner">
+        <div class="bannerImage bannerImage1"></div>
 
-        <!-- Blog Grid Section -->
-        <section class="blog-grid">
-          <h1>Latest Blog Posts</h1>
-          <div id="blog-card"></div>
-        </section>
-      </div>
+        <div class="banner__content">
+          <h1>
+            <span> Our Present is Our Future. </span>
+          </h1>
+          <h1>
+            <span class="text-typing">AI</span>
+          </h1>
+
+          <p>AI and Misinformation: A Threat to Democracy</p>
+          <a href="blog.html" class="button button-1">Read More</a>
+        </div>
+      </section>
+
+      <section class="latest-post-h1">
+        <h1>Latest posts</h1>
+        <div class="wrapper scroll-down fade-in-bottom">
+          <div class="slider">
+            <div class="content"></div>
+          </div>
+          <div id="left">
+            <img
+              src="/images/left1.png"
+              alt="left angle icon"
+              id="slide-left"
+              class="arrow"
+            />
+          </div>
+          <div id="right">
+            <img
+              src="/images/right1.PNG"
+              alt="right angle icon"
+              id="slide-right"
+              class="arrow"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="popular">
+        <div class="scroll-down fade-in-bottom">
+          <div class="popular-post-content">
+            <div class="popular-img"></div>
+            <div class="popular-text">
+              <div class="title">
+                <h1>Lately on the Blog</h1>
+                <h2>The inspiration behind this room design</h2>
+              </div>
+              <div class="popular-parag">
+                <p>
+                  In this article, Sophia Jensen embarks on a detailed
+                  exploration of the emergence of humanoid robots, charting
+                  their evolution from rudimentary machines to sophisticated
+                  entities that mirror human form and function. The summary
+                  begins by examining the rapid advancements in robotics
+                  engineering—highlighting breakthroughs in sensor technology,
+                  machine learning algorithms, and material sciences that have
+                  collectively driven the development of humanoid robots.
+                </p>
+                <p>
+                  It discusses how these robots are increasingly equipped with
+                  the ability to mimic human facial expressions, gait, and even
+                  subtle gestures, which makes them not only functional but also
+                  socially acceptable in environments such as healthcare
+                  facilities, retail, and domestic settings.",
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img id="backToTop" src="/images/uparrow.png" alt="up arrow" />
+        </div>
+      </section>
     </main>
-    <footer class="footer">
-      <div class="footer-links">
-        <a href="/html/contact.html">Contact</a>
-        <a href="">Terms & Conditions</a>
-        <a href="/html/about.html">About</a>
-      </div>
-
-      <div class="social-icons">
-        <h4>Follow Us</h4>
-        <a href="#"><i class="fab fa-tiktok"></i></a>
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
+    <footer class="parallax">
+      <div class="footer-container">
+        <div class="social-media-links scroll-down fade-in-bottom">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+        <p class="footer-span">Copyright 2025</p>
       </div>
     </footer>
 
-    <script src="/scr/index.js"></script>
-    <script src="/js/post.js"></script>
-    <script src="/scr/post.js"></script>
-    <script src="/scr/api.js"></script>
-    
-</body>
+    <script type="module" src="js/component/displayError.js"></script>
+    <script type="module" src="js/component/goUp.js"></script>
+    <script src="js/script.js"></script>
+    <script type="module" src="js/index.js"></script>
+    <script type="module" src="js/account/logout.js"></script>
+  </body>
 </html>

@@ -1,329 +1,64 @@
-* {
+@import url(import/variable.css);
+@import url(import/link.css);
+@import url(import/animations.css);
+@import url(import/header.css);
+@import url(import/banner.css);
+@import url(import/main.css);
+@import url(import/footer.css);
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-family: var(--text-paragraph);
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+h1 {
+  text-align: center;
+  font-family: var(--text-heading);
+  color: var(--header-button-color);
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 18px;
+}
+.font-transform-h1 {
+  text-transform: capitalize;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+h2,
+h3 {
+  font-family: var(--text-heading);
+  text-transform: capitalize;
+  font-weight: normal;
+  color: var(--header-button-color);
+}
+p {
+  color: var(--gray-dark-color);
+  font-weight: 400px;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+}
+header,
+footer {
   margin: 0;
   padding: 0;
 }
-body {
-  background-color: #f5f5f5;
-  font-family: "blinker", "DM Sans", "open sans", "Helvetica Neue",
-    "rubik glitch", sans-serif;
+img {
   margin: 0;
+  padding: 0;
+  max-width: 100%;
+  object-fit: contain;
 }
-
-header {
-  background-color: #434e78;
-  display: flex;
-  justify-content: flex-end;
-  padding: 20px;
-}
-
-.nav,
-ul {
-  list-style: none;
-  text-transform: capitalize;
-}
-.nav,
-ul,
-li {
-  display: inline-block;
-}
-
-.nav,
-ul,
-li,
-a {
-  text-decoration: none;
-  font-size: 1em;
-  padding: 5px 20px;
-  gap: 20px;
-  color: #ffff;
-}
-.nav,
-i {
-  color: aliceblue;
-  font-size: 1.2em;
-}
-
-/* Dropdown style will be fixed later on, this is a temporary work*/
-.dropdown-content {
-  display: none;
-  position: absolute;
-  left: 100;
-  background: #434e78;
-  min-width: 150px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  z-index: 10;
-}
-
-.dropdown-content li {
-  display: block;
-  width: 100%;
-}
-
-.dropdown-content li a {
-  padding: 10px;
-  color: #ffff;
-  display: block;
-}
-
-.dropdown-content li a:hover {
-  background: #ddd;
-}
-
-/* Show dropdown on click */
-.dropdown.active .dropdown-content {
-  display: block;
-}
-
-main {
-  margin: 0px;
-  padding: 5px 20px;
-}
-h1,
-h2 {
-  color: #6f4d89;
-  text-align: justify;
-  font-family: "blinker";
-}
-h1 {
-  font-size: 1.7em;
-  font-weight: bold;
+h3 {
+  font-size: 14px;
 }
 h2 {
-  font-size: 1.4em;
-  font-weight: 600;
-}
-/* Slider Container */
-
-.slider {
-  position: relative;
-  width: 100%;
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  background: linear-gradient(192deg, #434e78, #6f709a, #7c5897);
-}
-
-/* blog container*/
-#blog-card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-/* Standardize Slide Images*/
-#blog-card img {
-  width: 60%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 10px;
-}
-
-#blog-card {
-  width: 50%;
-  color: white;
-}
-
-#blog-card h1 {
-  font-size: 2.5rem;
-  font-family: rubik glitch;
-  color: aliceblue;
-  font-weight: 500;
-  word-spacing: 5%;
-  margin-bottom: 60px;
-  padding: 30px;
-  text-shadow: 2px 2px 5px rgba(238, 130, 246, 0.5);
-}
-
-#blog-card p {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  margin-bottom: 20px;
-}
-
-.btn {
-  background-color: #8059a8;
-  color: white;
-  padding: 10px 20px;
-  font-size: 1rem;
-  border-radius: 10px;
-  text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.btn:hover {
-  background-color: #6f4d89;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-Image .foreground-image {
-  width: 60%;
-  height: auto;
-  object-fit: contain;
-  position: relative;
-  z-index: 1;
-}
-
-#blogConatiner button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  font-size: 1.2rem;
-  z-index: 2;
-  border-radius: 5px;
-}
-
-#blogconatiner {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.slider .prev {
-  left: 10px;
-}
-
-.slider .next {
-  right: 10px;
-}
-
-.breadcrumb a {
-  color: #6f4d89;
-}
-.breadcrumb a:hover {
-  color: #6f709a;
-}
-.breadcrumb a:active {
-  color: #6f709a;
-  text-decoration: underline;
-  font-weight: 300;
-}
-
-.post-meta {
-  display: flex;
-  align-items: center;
-  gap: 0;
-}
-
-.related-blogs {
-  max-width: 400px;
-  margin-top: 0px;
-  float: right;
-}
-
-.related-post {
-  background: #822929;
-  border-radius: 5px;
-}
-
-.back-btn {
-  display: inline-block;
-  padding: 10px;
-  background: #6f4d89;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  margin: 10px;
-}
-
-.back-btn:hover {
-  background: #6f709a;
-}
-
-#carousel-slides {
-  display: flex;
-  flex-direction: column;
-}
-
-.carousel-slide {
-  display: none;
-  text-align: center;
-}
-
-.carousel-slide img {
-  width: 100%;
-  max-height: 300px;
-  object-fit: cover;
-}
-
-.carousel-text {
-  padding: 10px;
-
-  color: rgb(13, 13, 13);
-}
-
-#prev-btn,
-#next-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: black;
-  color: rgb(183, 42, 131);
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-}
-
-#prev-btn {
-  left: 10px;
-}
-#next-btn {
-  right: 10px;
-}
-
-#blog-feed {
-  margin: 20px 0;
-}
-
-#blogContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
-  padding: 20px;
-}
-#blogContaine {
-  cursor: pointer;
-  border: 1px solid #ddd;
-  padding: 10px;
-  text-align: center;
-  transition: transform 0.2s;
-}
-#blogContainer {
-  transform: scale(1.05);
-}
-
-#blogContainer {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-}
-
-/* Footer Styles */
-.footer {
-  background: linear-gradient(192deg, #7c5897, #6f709a, #434e78);
-  color: white;
-  font-family: "Dm san";
-  padding: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer .footer-links a {
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.footer .social-icons {
-  display: flex;
-  gap: 5px;
-}
-
-.footer .social-icons a {
-  color: white;
-  font-size: 1rem;
+  font-size: 16px;
 }
